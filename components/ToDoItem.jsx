@@ -64,7 +64,7 @@ const ToDoItem = ({ todo, todoItem, setTodoItem }) => {
         </button>
       )}
       <button type="button" className="deleteBtn" onClick={onClickDelete}>
-        🗑
+        🗑sdadsddghdgdh
       </button>
     </li>
   );
