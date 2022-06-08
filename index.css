@@ -1,0 +1,128 @@
+body {
+  background: #fcf6f5;
+}
+
+/* Home Page Container */
+.main {
+  max-width: 480px;
+  margin: 0 auto;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 18px;
+  border: 3px solid #7b9acc;
+  font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+.head {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* ToDo App Input Box */
+.inputbox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.inputText {
+  flex: 1;
+  border: none;
+  border-bottom: 1px solid #f1f3f5;
+  padding: 10px;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+.inputText:focus {
+  outline: none;
+}
+
+.addBtn {
+  border: none;
+  border-radius: 0;
+  background-color: #7b9acc;
+  color: #fcf6f5;
+  height: 50px;
+  width: 50px;
+  font-size: 35px;
+  font-weight: bold;
+  text-shadow: -2px 0px black, 0px 2px black, 2px 0px black, 0px -2px black;
+}
+
+/* ToDo Item List */
+.value {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
+
+/* ToDo Item */
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 36px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.retouchInput {
+  flex: 1;
+  border: none;
+  border-bottom: 1px solid #f1f3f5;
+  padding: 5px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.retouchInput:focus {
+  outline: none;
+}
+
+.todo {
+  flex: 1;
+  line-height: 100%;
+}
+
+.changeBtn,
+.deleteBtn {
+  border: none;
+  border-radius: 0;
+  height: 36px;
+  width: 36px;
+  background-color: inherit;
+}
+
+.changeBtn:hover,
+.deleteBtn:hover {
+  cursor: pointer;
+  background-color: #b7cbeb;
+}
+
+.changeBtn {
+  margin-right: 3px;
+}
