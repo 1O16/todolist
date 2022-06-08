@@ -8,7 +8,9 @@ const InputBox = ({ todoItem, setTodoItem }) => {
     setText(e.target.value);
   };
 
-  const onClickAdd = () => {
+  const onSubmitAdd = (e) => {
+    e.preventDefault();
+
     const addTodoItem = todoItem.concat({
       id: todoItem.length,
       text,
@@ -21,10 +23,10 @@ const InputBox = ({ todoItem, setTodoItem }) => {
     inputRef.current.focus();
   };
 
-  console.log(todoItem)
+  console.log(todoItem);
 
   return (
-    <div className="inputbox">
+    <form className="inputbox" onSubmit={onSubmitAdd}>
       <input
         type="text"
         name="todoInput"
@@ -34,10 +36,10 @@ const InputBox = ({ todoItem, setTodoItem }) => {
         className="inputText"
         onChange={onChange}
       />
-      <button type="submit" className="addBtn" onClick={onClickAdd}>
+      <button type="submit" className="addBtn">
         +
       </button>
-    </div>
+    </form>
   );
 };
 
